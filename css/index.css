@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    /* background-color: #21D4FD; */
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    min-height: 100vh;
+}
+
+.reg_color_title{
+    color: rgb(69 170 255);
+}
+
+
+.header{
+padding: 10px;
+}
+.header-container{
+    display: flex;
+    justify-content:center;
+    
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 5px;
+    max-width: 1000px;
+
+    /* background-color: #8EC5FC; */
+    background-image: linear-gradient(90deg, #00fbff 0%, #8c00ff 100%);
+
+    box-shadow: 0px 0px 1rem #21fde0;
+    
+    border-radius: 10px;
+    
+}
+.header-container h2{
+    padding: .25rem;
+
+    /* color: #d2fbff; */
+    
+    background-image: linear-gradient(270deg, #00fbff 0%, #8c00ff 100%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.conteaner-reg{
+    margin: 0 auto;
+
+    width: 350px;
+    height: 400px;
+
+    /* background-color: rgb(187, 255, 156); */
+}
+
+.block-reg{
+    /* margin: 10px; */    
+    width: 0%;
+    height: 0%;
+    margin: auto;
+    padding: 1rem;
+
+    /* opacity: 0; */
+    background-color: rgb(255, 255, 255);
+
+    overflow: hidden;
+    border-radius: 1rem;
+
+    animation: tt;
+    animation-duration:  .8s;
+    animation-delay: 300ms;
+
+    animation-fill-mode: forwards;
+
+}
+/* !important; */
+
+.back-anim{    
+    margin: auto;
+    padding: 1rem;
+
+    /* opacity: 0; */
+    background-color: rgb(255, 255, 255);
+
+    overflow: hidden;
+    border-radius: 1rem;
+
+    animation: tt; 
+    animation-duration:  .8s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+
+
+    
+}
+
+@keyframes tt2{
+    0%{
+
+        width: 0%;
+        height: 0%;
+    }
+    30%{        
+        width: 100%;
+        height: 10%;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@keyframes tt{
+    0%{
+        width: 0%;
+        height: 0%;
+    }
+    30%{
+        width: 100%;
+        height: 10%;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* 0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{        
+        opacity: 1;
+    }
+
+    20%{
+
+        box-shadow: 0px 0px 0rem #00ffe5;
+    }
+    100%{
+
+        box-shadow: 0px 0px 3rem #00ffe5;
+    } */
+}
+
+.block-reg h2{    
+    margin-bottom: 1rem;
+    
+    color: rgb(76 131 255);
+}
+.block-reg p{
+    margin: .25rem;
+}
+.block-reg input{
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .25rem;
+    font-size: 1.25rem;
+}
+.block-reg input::placeholder{
+    color: rgb(63, 162, 255);
+    opacity: .3;
+}
+
+.btn-to-reg{
+    float: right;
+    padding: .5rem;
+    background-color: #5fffe6;
+    border-radius: .5rem;
+    text-decoration: none;
+}
+.btn-to-reg:active{
+    color: #44ff15;
+}
+
+@keyframes frames_opasiti {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.block-reg h2,.block-reg p, .block-reg input, .block-reg a{
+    animation: frames_opasiti;
+    animation-duration: 0s;
+    animation-delay: 300ms;
+
+    animation-fill-mode: forwards;
+
+    overflow: hidden;
+}
+
+
+
+
+
+
+/* .block-reg{
+    animation: shaderAnim 1000ms linear 100 forwards;
+} */
+
+.new-anim{
+    /* box-shadow: 10px 5px 5px red; */
+    /* background-color: #4158D0; */
+
+    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+    /* transition: scale(1.5) 1000 ease 100; */
+    animation: myanim 1s infinite linear;
+}
+
+
+/* .new-anim:before {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+     top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    animation: floating 1s infinite linear;
+} */
+
+@keyframes myanim {
+    30% {
+       box-shadow: 0px 0px 50px rgb(0, 255, 255);
+    }
+    70%{
+        box-shadow: 0px 0px 100px rgb(233, 255, 36);
+    }
+ }
+
+
+
+
+
+@keyframes Gradient{
+    0%{
+        /* transform: translateX(2em);
+         transform: rotate(0deg); */
+         /* background:; */ 
+         background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    }
+    50%{
+        /* transform: translateX(6em); */
+        /* background-position: ; */
+         /* transform: rotate(360deg); */
+         background-image: linear-gradient(200deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    }
+    100%{        
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    }
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+
+
+
+
+.box:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(20deg, #e81cff -80%, #40c9ff 184% );
+    transform: translate3d(71px, 32px, 0) scale(0.95);
+    filter: blur(58px);
+    opacity: var(0.7);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.box::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+        
