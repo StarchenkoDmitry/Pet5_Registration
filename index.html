@@ -12,24 +12,70 @@
 <body>
     <header class="header">
         <div class="header-container new-anim">
-            <h2>Animation of Registration</h2>
+            <h2 class="logo">Beautiful Registration</h2>
+            <nav class="navigator">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <button onclick="openRegAuth();auther();" class="header-btn-login" href="">Login</button>
+            </nav>
         </div>
         <section>
-            <div class="conteaner-reg">
-                <div class="block-reg" >
-                    <h2>Registration</h2>
-                    <p class="reg_color_title">Login</p>
-                    <input type="text" placeholder="yourlogin">
-                    <p class="reg_color_title">Email</p>
-                    <input type="text" placeholder="youremail@email.com">
-                    <p class="reg_color_title">Password</p>
-                    <input type="text"  placeholder="password" >
-                    <a onclick="ani();" class="btn-to-reg" href="#">Registration</a>
+            <div class="region-reg-auth">
+                <div class="block-reg-auth">
+                    <span onclick="closeRegAuth();" class="closeRegAuth">X</span>
+                    <div class="block-reg-container">                        
+                        <h2>Registration</h2>
+                        <form name="reg" action="#reg">
+                            <div class="inputer">
+                                <input name="name" type="text" required>
+                                <label>Username</label>
+                                <img class="iconer" src="/icon/user.svg" alt="">
+                            </div>
+                            <div class="inputer">
+                                <input name="email"  type="text" required>
+                                <label>Email</label>
+                                <img class="iconer" src="/icon/email.svg" alt="">
+                            </div>
+                            <div class="inputer">
+                                <input name="password"  type="password" required>
+                                <label>Password</label>
+                                <img class="iconer" src="/icon/password.svg" alt="">
+                            </div>
+                            <div class="inputer-rem">
+                                <label><input name="check" type="checkbox" required>I agree to the terms and conditions</label>
+                            </div>
+                            <button type="submit"  class="btn">Register</button>
+                            <div class="reg-already">
+                                <p>Already have an account? <a onclick="auther();" href="#">Login</a></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="block-auth-container" style="display: none;">
+                        <h2>Sing in</h2>
+                        <form action="#auth" name="auth">                            
+                            <div class="inputer">
+                                <input name="email" type="text" required>
+                                <label>Email</label>
+                                <img class="iconer" src="/icon/email.svg" alt="">
+                            </div>
+                            <div class="inputer">
+                                <input name="password"  type="password" required>
+                                <label>Password</label>
+                                <img class="iconer" src="/icon/password.svg" alt="">
+                            </div>
+                            <div class="inputer-rem">
+                                <label><input name="check" type="checkbox">Remember me <a href="">Forgot Password?</a></label>
+                            </div>
+                            <button onclick="form_Auth();"  type="submit"  class="btn">Sing in</button>
+                            <div class="auth-not-already">
+                                <p>Don't have an account? <a onclick="register();" href="#">Register</a></p>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
     </header>
 </body>
 </html>
-
-<!-- style="display: none;" -->

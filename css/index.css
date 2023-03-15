@@ -2,307 +2,311 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-body{
-    /* background-color: #21D4FD; */
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+body{    
+    /* background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%); */
     min-height: 100vh;
+
+    background: url("/img/1.png") no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.reg_color_title{
-    color: rgb(69 170 255);
+a{
+    color: white;
 }
+
 
 
 .header{
-padding: 10px;
+    padding: 10px;
 }
 .header-container{
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
+    align-items: center;
     
     margin: 0 auto;
     margin-bottom: 50px;
-    padding: 5px;
-    max-width: 1000px;
 
-    /* background-color: #8EC5FC; */
-    background-image: linear-gradient(90deg, #00fbff 0%, #8c00ff 100%);
-
-    box-shadow: 0px 0px 1rem #21fde0;
+    padding: .5rem 1rem;
+    max-width: 60rem;    
     
-    border-radius: 10px;
-    
+    background-color: rgba(15, 72, 255, 0.122);
+    border: .125rem solid rgb(255, 255, 255,.4);
+    border-radius: 1rem;
+    backdrop-filter: blur(16px);
 }
-.header-container h2{
-    padding: .25rem;
 
-    /* color: #d2fbff; */
+
+.logo{
+    position: relative;
+    padding: .25rem;
     
-    background-image: linear-gradient(270deg, #00fbff 0%, #8c00ff 100%); 
+    /* background-image: linear-gradient(270deg, #5f55ff 0%, #64ffe2 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-.conteaner-reg{
-    margin: 0 auto;
-
-    width: 350px;
-    height: 400px;
-
-    /* background-color: rgb(187, 255, 156); */
-}
-
-.block-reg{
-    /* margin: 10px; */    
-    width: 0%;
-    height: 0%;
-    margin: auto;
-    padding: 1rem;
-
-    /* opacity: 0; */
-    background-color: rgb(255, 255, 255);
-
-    overflow: hidden;
-    border-radius: 1rem;
-
-    animation: tt;
-    animation-duration:  .8s;
-    animation-delay: 300ms;
-
-    animation-fill-mode: forwards;
-
-}
-/* !important; */
-
-.back-anim{    
-    margin: auto;
-    padding: 1rem;
-
-    /* opacity: 0; */
-    background-color: rgb(255, 255, 255);
-
-    overflow: hidden;
-    border-radius: 1rem;
-
-    animation: tt; 
-    animation-duration:  .8s;
-    animation-fill-mode: forwards;
-    animation-direction: reverse;
-
-
+    -webkit-text-fill-color: transparent; */
     
+    font-family: Comic Sans MS, cursive;
+    color: #fff;
+    text-shadow: 0px 0px 5px rgb(236, 158, 158); 
+
+    cursor:pointer;
+    user-select: none;
 }
 
-@keyframes tt2{
-    0%{
-
-        width: 0%;
-        height: 0%;
-    }
-    30%{        
-        width: 100%;
-        height: 10%;
-    }
-    100%{
-        width: 100%;
-        height: 100%;
-    }
-}
-
-@keyframes tt{
-    0%{
-        width: 0%;
-        height: 0%;
-    }
-    30%{
-        width: 100%;
-        height: 10%;
-    }
-    100%{
-        width: 100%;
-        height: 100%;
-    }
-
-    /* 0%{
-        opacity: 0;
-    }
-    20%{
-        opacity: 1;
-    }
-    100%{        
-        opacity: 1;
-    }
-
-    20%{
-
-        box-shadow: 0px 0px 0rem #00ffe5;
-    }
-    100%{
-
-        box-shadow: 0px 0px 3rem #00ffe5;
-    } */
-}
-
-.block-reg h2{    
-    margin-bottom: 1rem;
-    
-    color: rgb(76 131 255);
-}
-.block-reg p{
-    margin: .25rem;
-}
-.block-reg input{
-    display: block;
-    width: 100%;
-    margin-bottom: 1rem;
-    padding: .25rem;
+.navigator a{
+    position: relative;
     font-size: 1.25rem;
-}
-.block-reg input::placeholder{
-    color: rgb(63, 162, 255);
-    opacity: .3;
-}
-
-.btn-to-reg{
-    float: right;
+    margin-left: 1rem;
     padding: .5rem;
-    background-color: #5fffe6;
-    border-radius: .5rem;
     text-decoration: none;
-}
-.btn-to-reg:active{
-    color: #44ff15;
-}
+    font-weight: 600;
 
-@keyframes frames_opasiti {
-    0%{
-        opacity: 0;
-    }
-    20%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+    font-family: Comic Sans MS, cursive;
 }
 
-
-.block-reg h2,.block-reg p, .block-reg input, .block-reg a{
-    animation: frames_opasiti;
-    animation-duration: 0s;
-    animation-delay: 300ms;
-
-    animation-fill-mode: forwards;
-
-    overflow: hidden;
-}
-
-
-
-
-
-
-/* .block-reg{
-    animation: shaderAnim 1000ms linear 100 forwards;
-} */
-
-.new-anim{
-    /* box-shadow: 10px 5px 5px red; */
-    /* background-color: #4158D0; */
-
-    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
-    /* transition: scale(1.5) 1000 ease 100; */
-    animation: myanim 1s infinite linear;
-}
-
-
-/* .new-anim:before {
+.navigator a::after{
     content: "";
     position: absolute;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-     top: 0; 
-    left: 0; 
+    width: 100%;
+    height: .125rem;
+    left: 0;
+    bottom: .25rem;
+    background-color: #fff;
+
+    transform-origin:right;
+    transform: scaleX(0);
+    transition: transform .2s;
+}
+
+.navigator a:hover::after{
+    transform-origin:left;
+    transform: scaleX(1);
+}
+
+
+
+.header-btn-login{
+    font-family: Comic Sans MS, cursive;
+
+    margin-left: 1rem;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    color: #fff;
+    background: transparent;
+    border: .125rem solid #fff;
+    
+    border-radius: .5rem;
+    outline: none;
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.header-btn-login:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+
+
+.region-reg-auth{
+    width: 20rem;
+    height: 29rem;
+    margin: auto;
+}
+
+
+.block-reg-auth{
+    position: relative;
+    height: 23rem;
+    padding: 2rem;
+
+    color: #ffffff;
+    background-color: #0f48ff1f;
+    border: .125rem solid rgb(255, 255, 255,.5);
+    border-radius: 1rem;
+    backdrop-filter: blur(16px);
+
+    overflow: hidden;
+}
+
+
+.block-reg-auth h2{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.block-reg-container{
+    position:absolute;
+}
+
+.block-auth-container{
+    position: absolute;
+}
+
+
+
+
+.closeRegAuth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 0;
+    right: 0;    
+
+    background-color: #dcdcff3d;
+    border-bottom-left-radius: 1rem;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+.inputer{
+    position: relative;
+    height: 2rem;
+    margin-top: 1.5rem;
+
+    border-bottom: 2px solid black;
+}
+
+.inputer .iconer{
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    right: 0;
+    top:0;
+}
+.inputer label{
+    position: absolute;
+    font-size: 1.25rem;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transition: .2s;
+    user-select:none;
+}
+.inputer input{
+    margin-bottom: .5rem;
+    padding: 0 2rem 0 .125rem;
     width: 100%;
     height: 100%;
-    z-index: 100;
-    animation: floating 1s infinite linear;
-} */
 
-@keyframes myanim {
-    30% {
-       box-shadow: 0px 0px 50px rgb(0, 255, 255);
-    }
-    70%{
-        box-shadow: 0px 0px 100px rgb(233, 255, 36);
-    }
- }
+    font-size: 1.125rem;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.block-reg-auth button{
+    display: block;
+    width: 100%;
+    height: 2rem;
+    
+    border-radius: .5rem;
+}
+
+
+.inputer-rem{
+    margin: 1rem 0;
+}
+.inputer-rem input{
+    margin-right: .25rem;
+}
+
+
+.inputer input:focus ~ label,
+.inputer input:valid ~ label{    
+    top: -1rem;
+}
 
 
 
 
+.anim-appearance-container{
+    animation-name: appearance;
+    animation-duration: 1s;
+}
 
-@keyframes Gradient{
+.anim-disappearance-container{
+    animation-name: disappearance;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+
+@keyframes appearance{
     0%{
-        /* transform: translateX(2em);
-         transform: rotate(0deg); */
-         /* background:; */ 
-         background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+        opacity: 0;
+        transform: translateX(20rem);
     }
-    50%{
-        /* transform: translateX(6em); */
-        /* background-position: ; */
-         /* transform: rotate(360deg); */
-         background-image: linear-gradient(200deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    }
-    100%{        
-        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    100%{
     }
 }
 
-@keyframes floating {
-    from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 15px); }
-    to   { transform: translate(0, -0px); }    
+@keyframes disappearance{
+    0%{
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(-20rem);
+    }
+} 
+
+
+
+
+.open-RA{
+    animation-name: open-RA;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+.close-RA{    
+    animation-name: close-RA;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
 }
 
 
 
 
-
-.box:before {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(20deg, #e81cff -80%, #40c9ff 184% );
-    transform: translate3d(71px, 32px, 0) scale(0.95);
-    filter: blur(58px);
-    opacity: var(0.7);
-    transition: opacity 0.3s;
-    border-radius: inherit;
+@keyframes open-RA{
+    0%{
+        transform: scale(0);
+    }    
+    100%{
+        transform: scale(1);
+    }
 }
 
-/* 
-* Prevents issues when the parent creates a 
-* stacking context. (For example, using the transform
-* property )
-*/
-.box::after {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: inherit;
-    border-radius: inherit;
+@keyframes close-RA{
+    0%{
+        transform: scale(1);
+    }    
+    100%{
+        transform: scale(0);
+    }
 }
-        
+
+
+
+.reg-already,
+.auth-not-already{
+    margin-top: 1rem;
+    text-align: center;
+}
+
